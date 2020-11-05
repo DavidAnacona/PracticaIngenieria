@@ -1,0 +1,195 @@
+body {
+    background: url(../../recursos/img/15.jpg) no-repeat ;    
+    background-size:cover;
+    font-family: sans- serif;
+    height: 100vh;  
+}
+
+.container-all {
+    width: 30%;
+    margin-right: 0px;
+    margin-left: 0%;
+    height: 2px;
+    padding:  40px;
+}
+.container-all > p {
+font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+font-size: 14px;
+color: #ccc;
+line-height: 18px;
+margin-bottom: 20px;
+}
+.container-all > h1 {
+    color: #860404;
+    font-style:italic;
+    font-weight:bold;
+    font-size:2em;
+    font-family:'Helvetica','Verdana','Monaco',sans-serif;
+}
+
+/*MENU*/
+*{
+    margin:0;
+    padding:0;
+}
+header {
+    width:100%;
+    height: 60px;
+    background: black;
+    z-index: 100;
+}
+
+.img-logo {
+    width: 50px;
+    margin-left: 2%;
+    padding: 0px;
+}
+nav {
+    margin-right: 2px;/*cambiar ubicacion del menu*/
+    margin-left: 15%;
+    width: 90%;
+    max-width:1000px;
+}
+nav ul{
+    list-style:none;
+}
+nav > ul {
+    display:table;
+    overflow:hidden;
+    width:100%;
+    background:#000000;
+    position:relative;
+}
+nav > ul li {
+    display:table-cell;
+}
+/*Submenu*/
+nav > ul > li:hover > ul {
+    display:block;
+}
+nav > ul > li > ul {
+        display: none;
+ }
+nav > ul li a {
+    color: #ffffff;
+    display: block;
+    line-height: 20px;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .160s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+ nav > ul > li > ul > li a:hover {
+     background:#f25724;/*Color submenu*/
+ }
+ nav > ul > li > a span {
+        background: #174459;
+        display: block;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: -50px;
+        -webkit-transition: all .160s ease;
+        -moz-transition: all .6s ease;
+         -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+ }
+nav > ul > li > a span .icon {
+    display: block;
+    
+  
+} 
+
+ nav > ul > li >  a:hover > span {
+     top:0;
+ }
+ /*colores*/
+ nav ul li a .primero{
+     background:#0e5061;
+ }
+ nav ul li a .segundo{
+     background: #5da5a2;
+ }
+ nav ul li a .tercero{
+     background: #f25724;
+ }
+ nav ul li a .cuarto{
+     background: #8FEC0E;
+ }
+nav  ul li a .quinto{
+    background: #5F9CD5;
+}
+nav  ul li a .sexto{
+    background: #F90000;
+}
+nav  ul li a .septimo{
+    background: #813E11;
+}
+nav  ul li a .octavo{
+    background: #589252;
+}
+nav  ul li a .noveno{
+    background: #590FD1;
+}
+nav  ul li a .decimo{
+    background: #1E1F28;
+}
+nav  ul li a .onceavo{
+    background: #E0EF68;
+}
+nav  ul li a .doceavo{
+    background: #717D7E;
+}
+nav  ul li a .treceavo{
+    background: #300EEC;
+}
+nav  ul li a .catorceavo{
+    background: #D11E0B;
+}
+
+.slider {
+    width: 95%;
+    margin: auto;
+}
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    
+    animation: cambio 60s infinite  alternate;
+   
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%}
+    45%{margin-left: -100%}
+    
+    50%{margin-left: -200%}
+    70%{margin-left: -200%}
+    
+    75%{margin-left: -300%}
+    100%{margin-left: -300%}
+    
+        
+}
+    
+    
+   
+    

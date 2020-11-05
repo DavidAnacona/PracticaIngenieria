@@ -1,0 +1,23 @@
+body {
+    background: url(../../recursos/img/4.jpg) no-repeat ;    
+    background-size:cover;
+    font-family: sans- serif;
+    height: 100vh
+    font-weight: normal;
+    font-family:     sans-serif;/*color de titulo etc*/
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 0;
+}
+.boton2 {
+    width: 50%;
+    font-family: Roboto;
+    outline: none;
+    background: #5F9CD5;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+        
+|
