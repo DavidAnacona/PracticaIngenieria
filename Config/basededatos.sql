@@ -16,7 +16,7 @@ idEspecialidad int,
 Primary key(idUsuario)
 );
 
-insert into Usuario (User,Password,nombreUsuario,apellidoUsuario,tipoDocUsuario,DocUsuario,estadoUsuario,tipoUsuario,idEspecialidad) values 
+insert into Usuario () values 
 ("DanielAnacona","daniel@1","Daniel Felipe","Anacona Castellanos","T.I",1034656097,"Activo","Administrador",1),
 ("DavidAnacona","Santi22","David Santiago","Anacona Castellanos","T.I",1001329930,"Activo","Profesor",2),
 ("JersonLopez","jerson@2","Jerson Stiven","López Rodriguez","C.C", 6783142174,"activo" "profesor",3),
@@ -206,5 +206,21 @@ alter table Calificacion ADD FOREIGN KEY (idCurso) References Curso(idCurso);
 alter table SeguimientoCurso ADD FOREIGN KEY (idUsuario) References Usuario(idUsuario); 
 alter table SeguimientoCurso ADD FOREIGN KEY (idCurso) References Curso(idCurso);
 Alter table Usuario ADD FOREIGN KEY (idEspecialidad) References especialidad(idEspecialidad);
+
+select * from Inasistencia, Usuario where idUsuario=id;
+
+SELECT * FROM Usuario  INNER JOIN Profesor  
+		ON Usuario.idUsuario=profesor.idUsuario
+	WHERE tipoUsuario='Usuario''Administrador';
+
+SELECT Usuario.idUsuario,Password,nombreUsuario,apellidoUsuario,tipoDocUsuario,DocUsuario,estadoUsuario,tipoUsuario,idEspecialidad
+	FROM Usuario LEFT JOIN Coordinador 
+	ON usuario.idUsuario=Profesor.idUsuario
+	WHERE tipoUsuario='Administrador';
+    
+SELECT Usuario.idUsuario,Password,nombreUsuario,apellidoUsuario,tipoDocUsuario,DocUsuario,estadoUsuario,tipoUsuario,idEspecialidad 
+   FROM Usuario RIGHT JOIN Profesor
+    ON usuario.idUsuario=Coordinador.idUsuario
+	WHERE tipoUsuario='Administrador';
 
 select nombreUsuario, apellidoUsuario FROM Usuario
